@@ -1,0 +1,162 @@
+import java.util.*;
+
+class trainTickets {
+   public static void main(String args[]) {
+      Scanner sc = new Scanner(System.in);
+      System.out.println("1.EXPRESS   2.LOCAL");
+      int n = sc.nextInt();
+     // if (n == 1) {
+         System.out.println("Enter from which station you want to take train");
+         String g = sc.nextLine();
+         //int z = g.length();
+       //  if (z >= 1) {
+            System.out.println("Enter to which statin you want train");
+            String t = sc.nextLine();
+            //int lt=t.length();
+           // if(lt>=1)
+             {
+               System.out.println("ENTER DATE ");
+               int dt=sc.nextInt();
+               System.out.println("ENTER MONTH(IN N.O)");
+               int m=sc.nextInt();
+               switch(t)
+                {
+                  case "HWH":
+                   {
+                        System.out.println("Train                   Day                Time                  Fare/s");
+                        System.out.println("Rajdhani SF Express     MON,TUE,FRI,SAT    ARIVIAL:-    8PM      1A:3250/PASSENGER");
+                        System.out.println("                                           DEPARTURE:-  8:20PM   2A:2250/PASSENGER");
+                        System.out.println("                                                                 3A:1250/1PASSENGER");
+                   }
+                }
+             }
+         }
+         //else
+         //System.out.println("Something wentwrong please redo the process");
+      } 
+ //  }
+//}
+
+
+
+
+
+
+stone paper scissor:-.
+1st failed prog.
+import java.util.*;
+class rockpaperScissor
+ {
+    public static void main(String args[])
+     {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter Round Of The Game");
+        int r=sc.nextInt();
+        String rg="";
+        int p=0; // person points.
+        int cp=0; //pc points.
+        for(int i=1;i<=r;i++)
+         {
+            String a=sc.nextLine();
+            // System.out.println("Enter Rock Paper or Scissor ");
+            // String a=sc.nextLine();
+            int l = a.length();
+            a=a.toUpperCase();
+            int b=3;
+            // int l = a.length();
+            if(l%b==0)
+             {
+                rg="ROCK";
+             }
+             else if(l%b!=0)
+              {
+                rg="PAPER";
+
+              }
+              else
+               {
+                rg="SCISSOR";
+               }
+               System.out.println("Computer Gives"+rg);
+               if(a=="SCISSOR")
+                {
+                    if(rg=="ROCK")
+                     {
+                        System.out.println("Computer Wins");
+                     }
+                     else if(rg=="PAPER")
+                      {
+                        System.out.println("You Win");
+
+                      }
+                     else if(rg=="SCISSOR")
+                      {
+                         System.out.println("Its A Tie");
+                      }
+                }
+         }
+     }
+ }
+
+
+ 2nd failed:-
+
+ import java.util.*;
+class rockpaperScissor
+ {
+   public static void main(String args[])
+    {
+      Scanner sc=new Scanner(System.in);
+      System.out.println("Enter Rounds Of The Game");
+      int r=sc.nextInt();   //round
+      int cp=0,pp=0;   //cp=computer points, pp=player points
+
+      
+      
+      String s1="rock";
+      String s2="paper";
+      String s3="scissor";
+      String ss="";
+      System.out.println("Enter ROCK/PAPER/SCISSOR");
+
+      for(int i=0;i<=r;i++)
+       {
+         String s=sc.nextLine();
+         String sJ=s.toLowerCase();
+                  Random randomNum = new Random();
+         int sm = randomNum.nextInt(3);
+         if(sm==1)
+         ss=s1;
+         else if(sm==2)
+         ss=s2;
+         else if(sm==3)
+         ss=s3;
+
+         
+         if(s==s1 && ss==s1)
+          {
+            System.out.println("Computer:-"+ ss);
+            System.out.println("ITS A TIE");
+            System.out.println("POINTS:- YOU- " +pp+ "Computer"+cp);
+          } 
+          else if(s==s2 && ss==s2)
+           {
+            System.out.println("Computer:-"+ ss);
+            System.out.println("ITS A TIE");
+            System.out.println("POINTS:- YOU- " +pp+ "Computer"+cp);
+           }
+           else if(s==s3 && ss==s3)
+            {
+               System.out.println("Computer:-"+ ss);
+              System.out.println("ITS A TIE");
+              System.out.println("POINTS:- YOU- " +pp+ "Computer"+cp);
+            }
+            else if(s==s1 && ss==s2)
+             {
+               System.out.println("Computer:-"+ ss);
+               System.out.println("COMPUTER WINS");
+               cp++;
+             }
+       }
+    }
+ }

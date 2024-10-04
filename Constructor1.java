@@ -4,7 +4,7 @@ class Constructor1
    public static void main(String args[])
     {
    int n;
-   
+   {
    Constructor1()
     {
       n = 0;
@@ -43,3 +43,4 @@ class Constructor1
    }
  }
 }
+ }
